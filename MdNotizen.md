@@ -90,4 +90,42 @@ Mit einem Polarisatior kann am Ende das Flüssigkristall, kann dann ein Schalter
 Spannung an kommt durch, Spannung aus nicht.
 
 
-8 9 10 fehlen noch
+**Schalter basieren auf photonischen Kristallen:**
+photonische Kristalle sind periodische optische Nanokristalle, typisch hexagonal angeordnete arrays auf Löchern in einem flachen Hohlleiter/Wellenleiter (waveguide), so hergestellt, dass sie den selben Effekt auf Photonen wie die Periodizität von Halbleiterkristallen auf Elektronen hat. 
+Bei richtiger Wahl des Loch Durchmessers und Periode, können spezifische Wellenlängen nicht durch das Material propagieren. 
+Auf diese WEise kann durch entfernen einer solchen Reihe, kann das Licht durch diese Reihe hindurch propagieren, wo keine Löcher sind. 
+Durch Änderung des Brechungsindexes des Halbleiter durch den das Licht propagiert, zB durch einen Kontrollpuls, kann ein Phasenverschub auftreten. Durch die Phasenänderung kann dann die Basis des Schalters bilden. 
+
+
+**Faser-Schalter:** 
+Physikalisches hin und her bewegen von zwei Phasern die jeweils von einem Piezoelement aufgebracht sind und so bewegt werden können. 
+Bei richtiger Ausrichtung findet Transmission statt und es kann zwischen den Fasern geschaltetet werden. 
+
+
+**Quanten optisscher Schalter:**
+Bei dem Quantum confined stark effect beschreibt die Änderung eine quantisierten Energie in einem Quantentopf wenn ein el Feld über den Quantentopf gelegt wird. 
+Daraus resultiert eine reduktion der Übergangsenergie zwischen dem geringsten quantisierten Energieniveau von LOch und Elektron. 
+Die optische Absorption ist des Quantentopfes ist erhöht für eine bestimmte Wellenlänge bei Anschluss eine Spannung.
+
+## Electro-optical switches
+###Theory and principles of electro-optical switches
+
+![Durschnitt eines Wellenleiters für einen el  opt Sw](./pics/ElOpSwDurchschnittWellenleiter.png){ height=40% }
+
+### Device structures of electro-optical switches
+
+![Schematische Darstellung eines 1x1 el optischen Sw auf SIO](./pics/SchematischerElOpSw.png){ height=40% }
+
+1x1 optischer Schalter = 1x1 optischer Modulator. (1x1 = einer rein , einer raus) 
+Wird mit III-V Materialen hergestellt, Bsp Si(Ge), $LiNbO_3$ oder Polymeren.
+Wird ie zB im Bild als SOI hergestellt also Silizium auf einem Isolator (SOI). 
+Besteht aus einer einzel Moden Lamelle die als Wellenleite dient, diese besteht aus einem n-typ (n-dotiert) Silizium auf einer $Si0_2$ Lage. 
+Eine p-n-Zusammenfügung wird unter der OF der Lamelle erstellt, um dort Ladungsträger in den Wellenleiter einzubringen. 
+Wird der p-n-Übergang in Vorwärtsrichtung betrieben, wenn optische Signale in die Lamelle entkuppelt werden, kann eine große Zahl von Ladungsträgern in den Wellenleiter eingebracht werden, dass führt dazu das der Brechungsindexes sich verringern wird. 
+Das kann dazu führen, dass der leitende Modus in den Schaltungs Modus des Substrates und der Hülle übergeht. 
+Das führt dazu das viel Energie des leitenden Modus verloren geht und in der Lamelle absorbiert wird. 
+Das führt dazu, dass die Lamelle den Strahl abschneidet. 
+$n^+$ zeigen Kollektoren an.
+
+
+
