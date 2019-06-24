@@ -119,13 +119,30 @@ Die optische Absorption ist des Quantentopfes ist erhöht für eine bestimmte We
 1x1 optischer Schalter = 1x1 optischer Modulator. (1x1 = einer rein , einer raus) 
 Wird mit III-V Materialen hergestellt, Bsp Si(Ge), $LiNbO_3$ oder Polymeren.
 Wird ie zB im Bild als SOI hergestellt also Silizium auf einem Isolator (SOI). 
-Besteht aus einer einzel Moden Lamelle die als Wellenleite dient, diese besteht aus einem n-typ (n-dotiert) Silizium auf einer $Si0_2$ Lage. 
+Besteht aus einer einzel Moden Lamelle die als einzel Moden-Wellenleite dient, diese besteht aus einem n-typ (n-dotiert) Silizium auf einer $Si0_2$ Lage. 
 Eine p-n-Zusammenfügung wird unter der OF der Lamelle erstellt, um dort Ladungsträger in den Wellenleiter einzubringen. 
 Wird der p-n-Übergang in Vorwärtsrichtung betrieben, wenn optische Signale in die Lamelle entkuppelt werden, kann eine große Zahl von Ladungsträgern in den Wellenleiter eingebracht werden, dass führt dazu das der Brechungsindexes sich verringern wird. 
-Das kann dazu führen, dass der leitende Modus in den Schaltungs Modus des Substrates und der Hülle übergeht. 
+Das kann dazu führen, dass der leitende Modus in den Strahlungsmodus des Substrates und der Hülle übergeht. 
+*Für Wellenleiter heißt das ein Strahlendermodus der nicht nur auf den Kern zB einer Faser begrenzt ist. Dieser Modus hat Felder, die überall außerhalb des Leiters oszillieren.*
 Das führt dazu das viel Energie des leitenden Modus verloren geht und in der Lamelle absorbiert wird. 
 Das führt dazu, dass die Lamelle den Strahl abschneidet. 
 $n^+$ zeigen Kollektoren an.
+Die Modulationstiefe (relative Modulations Amplitude / max. Änderung in Absorption) von $\SI{96}{\percent}$ bei $\SI{45}{\milli\ampere}$ (was auch der Betriebsstrom ist). 
+Der Verlust beim einstrahlen liegt bei $\SI{3.65}{\decibel}$ bei einer Wellenlänge von $\SI{1.3}{\micro\meter}$.
+Schlatzeit liegt bei $\SI{160}{\nano\second}$.
+
+
++ funkt so, dass durch anlegen eines Feldes ein ein Strahlungsmodus erreicht werden kann. Der kommt durch die reflexion innerhalb des LEiters durch die Änderung des Brechungsindexes. 
++ Dieser Strahlungsmodus hat Einfluss auf die Propagationskonstante des Materials $\gamma = \alpha + i \beta$. Dadurch wird $\beta$ verändert. Das ist der Parameter für die Phase, weshalb man hier auch von Phasenmodulation sprechen könnte. 
+
+## Liquid crystal optical switches
+### Liquid crystal theory and principles
+Einige organische Stoffe besitzen eine gewisse molekulare Ordnung abhängig von der Temperatur (sog. thermooptische Flüssigkristalle [LC]), also ein Mittelding zwischen kristallinen Stoffen und amorphen Flüssigkeiten.
+Manche Eigenschaften der Flüssigkristalle sind anisotrop wie zB die dielektrische Konstante und der Brechungsindex, wie auch bei manchen Festkörpern, sie sind aber gleichzeitig flüssig wie normale Flüssigkeiten. 
+Das hat zur Folge, dass die optischen Eigenschaften sich leicht durch anlegen eines el Feldes kotrollieren lassen. 
+Grundlegen basieren LC-Bauteile aus einer dünnen Schicht eines LC-Materials zwischen zwei Glassubstraten.
+
+![Schematischer Aufbau eines LC Bauteils](./pics/SchematischerAufbauLCModulator.png){ height=30% }
 
 
 
