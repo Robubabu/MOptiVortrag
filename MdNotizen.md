@@ -141,8 +141,43 @@ Einige organische Stoffe besitzen eine gewisse molekulare Ordnung abhängig von 
 Manche Eigenschaften der Flüssigkristalle sind anisotrop wie zB die dielektrische Konstante und der Brechungsindex, wie auch bei manchen Festkörpern, sie sind aber gleichzeitig flüssig wie normale Flüssigkeiten. 
 Das hat zur Folge, dass die optischen Eigenschaften sich leicht durch anlegen eines el Feldes kotrollieren lassen. 
 Grundlegen basieren LC-Bauteile aus einer dünnen Schicht eines LC-Materials zwischen zwei Glassubstraten.
+Die Dicke der LC Lage wird durch kleine kallibrierte Platzhalter gleich gehalten. 
+Die Platzhalter sind kleine Plastikmicrosphären oder Glasfasern. 
+Es werden transparente Elektroden in das Substrat eingebracht, um Spannung auf die LC Mol zu geben, die die Transmission durch die Zelle kontrollieren. 
+Schließlich werden auf die Zelle Polarisatoren auf beide Seiten des Substrates angebracht, und andere photonische Aplikationen. 
 
 ![Schematischer Aufbau eines LC Bauteils](./pics/SchematischerAufbauLCModulator.png){ height=30% }
+
+#### Liquid crystalline phases
+Phasen zwischen Feststoff und Flüssigkeit sind in LC Materialen zu funden, diese werden LC PHasen oder Mesophasen genannt. 
+Die Mesophasen tretten auf wenn die Moleküle stark anisotrop sind, üblicherweise bei Stabförmigen oder Scheibenförmigen Molekülen. 
+Meistens werden im photonischen Bereich stabförmige Moleküle verwendet. 
+Die meisten Materialen haben MEsophasen als Funtion der Temperatur. 
+Bei hoher Temperatur sind die Moleküle ungeordnet. Bei Kühlung richten sie sich in einer Bestimmten Richtung aus, sind aber nicht in einer räumlichen Ordnung (= nematische Phase). Wird die Temperatur weiter reduziert bildet sich auch teilweise eine räumliche Ordnung, die eine Lagenstruktur aufweist, mit der langen Axe der Moleküle entlang der Lage (= smektisch [in der Ebene] -A Phase). 
+Wird die Temperatur weiter reduziert, bildet sich eine Schieflage der Moleküle aus, im Bezug auf die Senkrechte der Lage ( smetisch-C Phase).
+Bei niedrigen Temperaturen bildet sich dann sowohl eine Orientierung als auch eine räumliche Anordnung aus (kristallinier Feststoff). 
+Dabei zeigen nicht alle LC Materialien alle Phasen. 
+
+**Hier Fehlt nocht ein Absatz, faöös das wichtig werden sollte** 
+
+#### Basic liquid crystal structures for optical switching
+
+**Twisted nematic (TN) cells**   
+Nemtaische LCs mit positiver dielektrischer Anisotropie, für die die dielektrische Konstante größer in der langen Axe des Moleküles ist als in der kruzen Axse ist, werden in TN Materialien verwendet. 
+Planare Anordung, (zB LC Molekül Axse parallel zum Glassubstrat) und senkrechtes Schleifen entlang der beiden Anordnungsrichtungen werden verwendet. 
+Desalb führen die LC Moleküle eine $\SI{90}{\degree}$ Drehung entlang der LC Zelle. 
+Dadurch wird linearpol Licht so modifiziert, dass es mit $\SI{90}{\degree}$ Polarisierungsverschub zum eintreffenden Licht herraustritt. Das geschieht wenn die Maugin Bedinugn erfüllt ist:
+$$ d \cdot \Delta n >> \frac{\lambda}{2} $$ 
+dabei bezeichnet $d$ die Dicke der Zelle, $\Delta n$ die LC Doppelbrechung/opt. Anisotropie und $\lambda$ die Wellenlänge.   
+Die Moleküle orientieren sich neu, wenn die Spannung größer ist als die Schwellspannung $V^{th}$ ist. 
+Wird eine Schaltspannung $V^{sw}$ erreicht ( ON-Zustand ), richten sich die LC Moleküle parallel zum Feld aus und die Rotation der Polarisation verschwindet.   
+Polarisatoren werden so angebracht, dass sie parallel zur Schleifrichtung (Richtung in der die Mol liegen) sind. 
+Die typischen Spannung für Schwellspannung liegen bei 1-2V und bei der Schaltspannung bei 3-5V.
+
+![**Arbeitsschema einer LC Zelle mit a) gekreuzten Polarisatoren b)parallelen Polarisatoren.**   In beiden Fällen tritt unpolarisiertes Licht ein und trifft auf einen Polarisator, dass Licht wird linear polarisiert. Die grauen Bohnen zeigen die Orientierung der Moleküle in der Zelle. a) und b) zeigen jeweils zwei Fälle einmal mit und ohne angelegte Spannung. Der UNterschied zwischen a) und b) sind die Polarisatoren am Ende der Zelle.](./pics/LCPolarisationArbeitsschema.png){ height=50% }
+
+### Liquid crystal theory and principles
+#### Switches based on polarization management
 
 
 
