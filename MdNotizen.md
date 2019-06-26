@@ -7,6 +7,7 @@ classoption:
 header-includes:
    - \usepackage{braket}
    - \usepackage{siunitx}
+lang: de
 output:
     pdf_document
 ---
@@ -16,9 +17,9 @@ Ein optischer Schalter ist ein Gerät, dass selektiv optische Signale an/aus ode
 ## Applications 
 Die Technologie des optical switching wird von dem Bedarf an Felxibilität in optischen Netzwerken angetrieben. Führende Anwendugen sind optische Abschirmung, Testsysteme, fern-rekonfigurierbare add-drop Multiplexer und Sensorik.
 
-*Multiplexverfahren (lat. multiplex vielfach, vielfältig) sind Methoden zur Signal- und Nachrichtenübertragung, bei denen mehrere Signale zusammengefasst (gebündelt) und simultan über ein Medium (Leitung, Kabel oder Funkstrecke) übertragen werden. Oftmals werden Multiplexverfahren auch kombiniert, um eine noch höhere Nutzung zu erreichen. Die Bündelung erfolgt, nachdem die Nutzdaten auf ein Trägersignal moduliert wurden. Entsprechend werden sie beim Empfänger nach der Entbündelung (dem Demultiplexen) demoduliert.*
-
-*Ein Add-Drop-Multiplexer ist ein Gerät der Multiplextechnik, das einem Multiplexsignal sowohl ein oder mehrere Teilsignale hinzufügen (add) und auch aus dem Multiplexsignal Teilsignale entnehmen (drop) kann. Das empfangene Multiplexsignal wird bis auf diese Add/Drop-Änderungen unverändert weitergesendet.*
+> *Multiplexverfahren (lat. multiplex vielfach, vielfältig) sind Methoden zur Signal- und Nachrichtenübertragung, bei denen mehrere Signale zusammengefasst (gebündelt) und simultan über ein Medium (Leitung, Kabel oder Funkstrecke) übertragen werden. Oftmals werden Multiplexverfahren auch kombiniert, um eine noch höhere Nutzung zu erreichen. Die Bündelung erfolgt, nachdem die Nutzdaten auf ein Trägersignal moduliert wurden. Entsprechend werden sie beim Empfänger nach der Entbündelung (dem Demultiplexen) demoduliert.*
+ 
+> *Ein Add-Drop-Multiplexer ist ein Gerät der Multiplextechnik, das einem Multiplexsignal sowohl ein oder mehrere Teilsignale hinzufügen (add) und auch aus dem Multiplexsignal Teilsignale entnehmen (drop) kann. Das empfangene Multiplexsignal wird bis auf diese Add/Drop-Änderungen unverändert weitergesendet.*
 
 Aktuelle Anwendungen sind zB:
 
@@ -123,7 +124,9 @@ Besteht aus einer einzel Moden Lamelle die als einzel Moden-Wellenleite dient, d
 Eine p-n-Zusammenfügung wird unter der OF der Lamelle erstellt, um dort Ladungsträger in den Wellenleiter einzubringen. 
 Wird der p-n-Übergang in Vorwärtsrichtung betrieben, wenn optische Signale in die Lamelle entkuppelt werden, kann eine große Zahl von Ladungsträgern in den Wellenleiter eingebracht werden, dass führt dazu das der Brechungsindexes sich verringern wird. 
 Das kann dazu führen, dass der leitende Modus in den Strahlungsmodus des Substrates und der Hülle übergeht. 
-*Für Wellenleiter heißt das ein Strahlendermodus der nicht nur auf den Kern zB einer Faser begrenzt ist. Dieser Modus hat Felder, die überall außerhalb des Leiters oszillieren.*
+
+> *Für Wellenleiter heißt das ein Strahlendermodus der nicht nur auf den Kern zB einer Faser begrenzt ist. Dieser Modus hat Felder, die überall außerhalb des Leiters oszillieren.*
+
 Das führt dazu das viel Energie des leitenden Modus verloren geht und in der Lamelle absorbiert wird. 
 Das führt dazu, dass die Lamelle den Strahl abschneidet. 
 $n^+$ zeigen Kollektoren an.
@@ -176,8 +179,31 @@ Die typischen Spannung für Schwellspannung liegen bei 1-2V und bei der Schaltsp
 
 ![**Arbeitsschema einer LC Zelle mit a) gekreuzten Polarisatoren b)parallelen Polarisatoren.**   In beiden Fällen tritt unpolarisiertes Licht ein und trifft auf einen Polarisator, dass Licht wird linear polarisiert. Die grauen Bohnen zeigen die Orientierung der Moleküle in der Zelle. a) und b) zeigen jeweils zwei Fälle einmal mit und ohne angelegte Spannung. Der UNterschied zwischen a) und b) sind die Polarisatoren am Ende der Zelle.](./pics/LCPolarisationArbeitsschema.png){ height=50% }
 
-### Liquid crystal theory and principles
+### Liquid crystal switches and applications
 #### Switches based on polarization management
+Dieser Schalter beruht auf dem Prinzip, dass die Polarisationsebene des einfallenden Lichtes  gedreht wird bei anlegen eines elektrischen Feldes. 
+Die Änderung der Polarisation mit einer TN Zelle in Kombination mit einem Doppelbrechenden Calcitkristall, der räumlich Polarisation selektieren kann, oder einem Polarisations Strahlteiler (PBS) ist räumliches optisches Schalten möglich. 
+Um die Polarisation zu verstärken und Verluste zu minimieren, wird eine Vielfach Polarisations methode verwendet, indem jede Polarisation parallel verabreitet wird. Das Signal wird in die TE und TM Komponente aufgeteilt, die wiederum am Ausgang rekombiniert werden. 
+Das Prinzip ist in \autoref{PolMeth} dargestellt.
+
+![LC Switch Polarisationsverarbeitungs Methodic Schema\label{PolMeth}](./pics/LCSwitchMethodeSchema.png){ height=40% }
+
+> *Die transversalelektromagnetische Welle oder TEM-Welle (engl. Transverse Electromagnetic Mode) ist ein Sonderfall einer elektromagnetischen Welle, bei der in Ausbreitungsrichtung sowohl das elektrische als auch das magnetische Feld verschwindet. Stattdessen befinden sich die magnetischen und elektrischen Felder ausschließlich in Ebenen senkrecht (transversal) zur Ausbreitungsrichtung. Dieser Typ elektromagnetischer Wellen bildet sich als geführte Welle z. B. zwischen Außen- und Innenleiter eines verlustlosen Koaxialkabels aus. Auch die ebene Welle ist ein Beispiel für TEM-Wellen.*
+
+> + *transversal-elektrische Wellen (TE-Wellen); hier verschwindet nur die elektrische Komponente in Ausbreitungsrichtung, während die magnetische Komponente Werte ungleich 0 annehmen kann.*
+> + *transversal-magnetische Wellen (TM-Wellen); hier verschwindet nur die magnetische Komponente in Ausbreitungsrichtung, während die elektrische Komponente Werte ungleich 0 annehmen kann.*
+
+Einfachste Bsp dazu ist der zuvor beschriebene 1x2 LC Schalter in \autoref{LCPolSw}. 
+Dieser funktioniert wie folgt, der Polarisator P manipuliert die Polarisation zum bevorzugten Output. 
+PS bezeichnet hier den LC,liegt keine Spannung an wird das linear polarisierte LIcht aus P um $\SI{90}{\degree}$ in der Polarisation gedreht. Das Licht tritt durch den PBS und trift so auf Port 2. 
+Wird eine Spannung größer als $V^{sw}$ angelegt, richten sich die LC Molekülen parallel aus zum E-Feld und es tritt beim PS keine Rotation der Polarisation auf. 
+Weshalb das Licht im ON-Modus des Schalters vom PBS zum Port 3 reflektiert wird.   
+Die Transmission kann also durch die Spannung an der LC Zelle gesteuert werden, kleinere Spannungen führen zu einer geringeren Rotaion der Polarisationsebene. Folglich können diese Schalter auch als variable optische Dämpfungsglieder (variable optical attenuators = VOA) verwendet werden. 
+Durch anlegen einer Spannung $V^{th} < V < V^{sw}$ kann der VOA so eingestellt werden, dass er auf beie Output ein Signal mit einstellbarem Verhältnis zu einander gibt. 
+Das ist abhängig von der angelegten Spannung und damit von der Polarisationsebene.  
+
+
+![LC Polarisations Schalter \label{LCPolSw}](./pics/LCPolRotSwitch.png){ height=50% }
 
 
 
