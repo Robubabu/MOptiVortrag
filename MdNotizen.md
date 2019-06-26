@@ -202,8 +202,17 @@ Die Transmission kann also durch die Spannung an der LC Zelle gesteuert werden, 
 Durch anlegen einer Spannung $V^{th} < V < V^{sw}$ kann der VOA so eingestellt werden, dass er auf beie Output ein Signal mit einstellbarem Verhältnis zu einander gibt. 
 Das ist abhängig von der angelegten Spannung und damit von der Polarisationsebene.  
 
-
 ![LC Polarisations Schalter \label{LCPolSw}](./pics/LCPolRotSwitch.png){ height=50% }
 
+**Performance of polarization management based liquid crystal switches**
 
+Alle Schalter basieren Grundsetzlich auf dem oben dargestellten System, dabei können auch andere optische Instrumente verwendet werden Prismen, Spiegel etc.
+Eine schnellere Schaltzeit wird dadurch erhalten, das ferroelektrische LC verwendet werden. 
+> *Ferroelektrizität (oder auch Polarisationskatastrophe) beschreibt das Phänomen, dass Stoffe mit einem elektrischen Dipolmoment durch das Anlegen eines äußeren elektrischen Feldes die Richtung der spontanen Polarisation ändern.*
+Mit FLCs können Reaktionszeiten von $\SI{35}{\micro\second}$ und mit NLCs nur $\SI{20}{\milli\second}$. 
+NLC reagieren langsamer als FLC können auf eine größere Bandbreite im Bezug auf Wellenlängen. 
+Tabellen mit Publikationen und Bauart des Schalters sind in den Abb. \ref{LCtab1} und \ref{LCtab2} zu finden. 
 
+![LC Schalter Tab 1 \label{LCtab1}](./pics/TabLCPub.png){ height=60% }
+
+![LC Schalter Tab 2 \label{LCtab2}](./pics/LCPubTab2.png){ height=60% }
