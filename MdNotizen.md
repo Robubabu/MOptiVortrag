@@ -216,3 +216,26 @@ Tabellen mit Publikationen und Bauart des Schalters sind in den Abb. \ref{LCtab1
 ![LC Schalter Tab 1 \label{LCtab1}](./pics/TabLCPub.png){ height=60% }
 
 ![LC Schalter Tab 2 \label{LCtab2}](./pics/LCPubTab2.png){ height=60% }
+
+## Thermo-optical switches
+### Device structures of thermo-optical switches
+#### Adiabatic mode coupler
+In der \autoref{thopsw} sieht man einen digital optischen Schalter (DOS), dieser ist eine attraktive Variante um räumlich in Kommunikationsnetzwerken mit mehreren Wellenlängen zu schalten. 
+Die meist verwendete Variante davon ist der linear Y-Verbinung, diese besteht aus einem Kegelförmigen Wellenleiter, der sich adiabatisch an die eingeführte fundermentale Mode in die bimodale DOS Inputregion anpasst, gefolgt von zwei Einzel-Moden symmetriesche Ausgänge.  
+Das Funktionsprinzip des 1x2 DOS basiert auf der Variation des effektiven Modal Indizes bei heizen des Wellenleiters, welcher wiederum den Weg den das LIcht durch die Struktur nimmt ändern kann. 
+
+> *Modal Index bezeichnet die Phasenverschub pro Längeneinheit die das Licht durch den Wellenleiter propagiert*
+
+Die Wärmezufuhr gelingt über Elektroden über oder nahe des optischen Wellenleiters. 
+Durch den Joule Effekt wird dann Hitze ins Material gebracht und der Brechungsindex im Wellenleiter verändert sich.   
+Haben beide Arme also die gleiche Temperatur, dann ist der DOS geometrisch symmetrisch und wirkt als -3dB (Hälfte) Energie Teiler. 
+Energie wird also auf beide Arme gleichmäßig verteilt. 
+Bei erhitzen eines Arms wird die Y-Verbindung asymmetrisch; Das Licht wird also zum Arm mit dem höheren Brechungsindize geleitet, da der Input sich adiabatisch anpasst. 
+ 
+![Schematischer Aufbau eines thermo optischen Schalters \label{thopsw}](./pics/ThermoOptSwSchematischerAufbau.png){ height=40% }
+
+## Switching based on optical nonlinear effects
+### Structure of nonlinear-effect-based optical switches
+#### Nonlinear optical loop mirror
+
+![Grundlegender Aufbau eines nicht Linearen Schleifen Spiegel (NOLM) \label{NOLM}](./pics/NOLM-Schema.png){ height=40% }
