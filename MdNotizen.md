@@ -237,5 +237,18 @@ Bei erhitzen eines Arms wird die Y-Verbindung asymmetrisch; Das Licht wird also 
 ## Switching based on optical nonlinear effects
 ### Structure of nonlinear-effect-based optical switches
 #### Nonlinear optical loop mirror
+Nicht-lineare optische Schleifen Spiegel (Nonlinear optical loop mirrors [NOLMs]) arbeiten nach dem Prinzip, dass zei LIchtstrahlen die gegenläufig propagieren, unterschiedlich starke nichtlineare Phasenverschiebungen im nichtlinearen Medium erfahren. 
+Der Schematische Aufbau eines NOLMs ist in der \autoref{NOLM} dargestellt. 
+Er besteht aus einem optischen Koppler und einer Faser Schleife für eine Nichtlinarität. 
+Ein Signal wird in den Eingang der Faser gegeben   $E^1$, der Koppler hat eine ungleiche Aufspaltungsrate $\alpha$, so dass die Energie der zwei entgegengerichteten Strahlen $E^2 \& E^3$. 
+Der stärkere Strahl erzeugt mehr Selbst-Phasen-Modulation (SPM) als der schwächere, so dass eine Phasendifferenz zwischen den gegenläufigen Strahlenauftritt nach dem sie aus der Faser-Schleife austreten. 
+Abhängig von der Stärke des Eingangssignals, ändert sich die nichtlineare Phasenmodulation des stärkeren Strahls sowie der Phasenverschub zwischen den gegenläufigen Strahlen. 
+Die zwei gegenläufigen Strahlen treffen sich wieder am Koppler und interferieren, konvertieren ihre  Phasendifferenz zu einer entsprechenden Amplitude an dem Ausgang des Schleifen Spiegels. 
+Das Signal das konstruktiv interferiert geht aus dem Ausgang raus $E^{O2}$, der destruktiv interferierte Teil geht wieder auf den Eingang zurück $E^{O2}$.   
+**Verwendungsmöglichkeiten:**
+
++ Autokorrelationssignal Extraktion
++ Rauschunterdrückung 
 
 ![Grundlegender Aufbau eines nicht Linearen Schleifen Spiegel (NOLM) \label{NOLM}](./pics/NOLM-Schema.png){ height=40% }
+
