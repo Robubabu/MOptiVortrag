@@ -208,7 +208,9 @@ Das ist abhängig von der angelegten Spannung und damit von der Polarisationsebe
 
 Alle Schalter basieren Grundsetzlich auf dem oben dargestellten System, dabei können auch andere optische Instrumente verwendet werden Prismen, Spiegel etc.
 Eine schnellere Schaltzeit wird dadurch erhalten, das ferroelektrische LC verwendet werden. 
+
 > *Ferroelektrizität (oder auch Polarisationskatastrophe) beschreibt das Phänomen, dass Stoffe mit einem elektrischen Dipolmoment durch das Anlegen eines äußeren elektrischen Feldes die Richtung der spontanen Polarisation ändern.*
+
 Mit FLCs können Reaktionszeiten von $\SI{35}{\micro\second}$ und mit NLCs nur $\SI{20}{\milli\second}$. 
 NLC reagieren langsamer als FLC können auf eine größere Bandbreite im Bezug auf Wellenlängen. 
 Tabellen mit Publikationen und Bauart des Schalters sind in den Abb. \ref{LCtab1} und \ref{LCtab2} zu finden. 
@@ -251,4 +253,69 @@ Das Signal das konstruktiv interferiert geht aus dem Ausgang raus $E^{O2}$, der 
 + Rauschunterdrückung 
 
 ![Grundlegender Aufbau eines nicht Linearen Schleifen Spiegel (NOLM) \label{NOLM}](./pics/NOLM-Schema.png){ height=40% }
+
+## Magneto-optical switches
+### All-optical switches
+
+![Schematischer Aufbau eines el opt. Schalters \label{EOSch}](./pics/ElOptSwSchema.png){ height=20% }
+
+### Magneto-optical switches
+Magneto optische Schalter basieren auf dem Faraday Effekt, dieser dreht die Polarisationsebene wenn Licht durch ein magneto optisches Material in der selben Richtung propagiert in der ein B-Feld angelegt ist. 
+
+**Problem:** 
+
+Es wurde nicht soviel Forschung dahingehend betrieben, da es an ausreichend magneto optischen Materialen hoher Qualität magelt. 
+Jüngste Fortschritte wurden mit Eisengranaten in den Bismuth ersetzt wurde oder Orthoferrite gemacht, da diese hohe magneto optische Eigenschaften zeigen. 
+Diese haben einen geringen Verlust beim einkoppeln von Licht, sowie eine große Bandbreite und eine hohen Grad an Rotation für wenig angelegtes Feld. 
+
+Schalt Methodik lässt sich aber an \autoref{EOSch} erklären. Hier muss nur das EO Material durch ein MO Material ersetzt werden und statt einem E-Feld ein B-Feld angelegt werden. 
+
+---
+
+# Digital MEMS for Optical Switching
+## MEMS-BASED OPTICAL SWITCHES
+
+![2D & 3D MEMS Schematischer Aufbau \label{23DMEMS}](./pics/23DMEMSSchema.png){ height=40% }
+
+MEMS wurden sehr schnell attraktiv, da sie die Möglichkeit bieten bei kleinen Verlusten viele Anschlüsse bei wenig kosten pro Anschluss zu schalten. 
+Grundlegend ist ein MEMS-Apparat ist ein mechanisch integrierter Schaltkreis bei dem die Antriebskräfte die benötigt werden um Teile zu bewegen elektrostaisch, elektromagnetisch sowie thermisch sein können. 
+Deshalb werden Materialien verwendet die sowohl gute mechanische als auch elektrische Eigenschaften haben, zB Si, SiOx und SiNx. 
+MEMS basierend auf Silizium können mit vielen Methoden verwirklicht werden zB Volumen microätzen (ätzen der Strukturen in einen Einkristall), Oberflächen microätzen bei dem epitaktische Lagen von Polysizium, Siliziumnitrid und Siliziumoxid ist aufgetragen, strukturiert und selektiv entfernt werden.   
+Es gitb zwei Arten von MEMS 2D (digital) und 3D (analog). 
+Bei 2D MEMS sind die Schalter digital, da die Spiegelpositionen hier bistabil sind (on/off), siehe \autoref{23DMEMS) a). 
+In der Abbildung sind die Spiegel in der Diagonalen angeordnet um eine Querschaltung/Kreuzschaltung zu ermöglichen. 
+Wird ein SPiegel aktiviert, bewegt er sich in den Strahl und lengt so den Strahl um $\SI{45}{\degree}$ ab. 
+Das ermöglicht auch das ein Strahl durch die Speigelmatrix propagieren kann ohne einen Spiegel zu treffen. 
+Das eröffnet die Möglichkeit optische Kanäle hinzufügen und zu entfernen.   
+Bei den 3D MEMS ist die Verbindung zwischen Ausgang und Eingang durch, das kippen der Spiegel gegeben (router/selector Architektur). 
+Diese Technologie ist sehr vielversprechend für hohe Anschlusszahlen und Kreuzschaltungen mit über 1000 Ein-und Ausgängen bei Verlusten unter 3dB. 
+
+## 2D MEMS TECHNOLOGY :A MATURE TECHNOLOGY TODAY
+### MEMS Design Aspects 
+![2D MEMS a) Spiegel Aktuatoren Schema b) 16x16 MEMS mit 256 Aktuatoren \label{2DMEMS}](./pics/MEMSSpiegelSwitching.png){ height=40% }
+
+Beste Möglichkeit, Aktuatoren zu erstellen, die die zuvor genannten Kriterien (für 2D) erfüllen, sind in der \autoref{2DMEMS} a) dargstellt. 
+Im OFF-Zustand ist ein Winkel zwischen Substrat OF und Aktuator. 
+Wenn eine Spannung angelgt wird zwischen dem Aktuator und der OF bewegt sich der Aktuator nach unten aufgrund der elektrostatischen Anziehungskraft. Der Spiegel wird so geätzt, dass er $\SI{90}{\degree}$ zur OF steht. 
+Die elektrostatische Antriebsvariante ist besonders von Vorteil, da es sehr geringe Energie Disspation erlaubt, in einer Größenordnung von einigen Microwatt (für 16x16). 
+
+## APPLICATIONS OF 2D MEMS OPTICAL SWITCHES
+
+![a) Multiplexer Schema b) Multiplexer mit 2D MEMS \label{2DMEMSMultip}](./pics/Multiplexer+MEMSMuliplexer.png){ height=40% }
+
+**Rekonfigurierbarer Wellenlängen add-drop Multiplexer:**  
+Ein rekonfigurierbarer Wellenlängen add-drop Multiplexer siehe \autoref{2DMEMSMultip} a) ist ein wichtiges Bauelemnt für optische Netzwerkknoten. Es besteht aus einem Wellenlängen demultiplexer, der die Wellenlänge von einer Faser auf mehrere Fasern aufteilt. Die Schalter im inneren erlauben es Signale zu entfernen (droppen) oder gleichzeitig neue Signale hinzu zu fügen. Die Signale werden wieder in einem Wellenlängen Multiplexer zusammengeführt und auf eine Faser gegeben.   
+
+**Rekonfigurierbarer Wellenlängen add-drop Multiplexer mit 2D MEMS:**  
+Ein optischer 2x2 Schalter kann durch eine MEMS-Apparatur ausgetauscht werden. Die MEMS Chips haben zwei Reihen aus Spiegeln, die gleichzeitig schalten. 
+Wenn ein Paar von Spiegeln aktiviert wird, wird das einkommende Signal auf den Drop-Port geleitet und der jeweilige Add-Port  gibt sein Signal auf den Ausganggegeben. 
+Wird kein Spiegel aktiviert geht das Signal direkt auf den Ausgang. 
+
+
+
+
+
+
+
+
 
